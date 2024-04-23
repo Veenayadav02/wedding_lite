@@ -2,6 +2,11 @@
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'wedding_lite'
+    arguments: 'v2'
     projects: 'wedding_lite'
     arguments: 'v1'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
